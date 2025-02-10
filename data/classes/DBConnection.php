@@ -7,7 +7,7 @@ class DBConnection{
     private $host = mysql;
     private $username = dev;
     private $password = dev;
-    private $database = lms_db;
+    private $database = account_manager_db;
     
     public $conn;
     
