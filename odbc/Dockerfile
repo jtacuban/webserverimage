@@ -5,5 +5,4 @@ RUN apt-get update && apt-get install -y \
 RUN docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr \
     && docker-php-ext-install pdo_odbc    
 RUN sudo dpkg -i /odbc/ibm-iaccess-1.1.0.28-1.0.amd64.deb
-RUN sudo apt-get install -f 
 COPY odbc/ /etc/
