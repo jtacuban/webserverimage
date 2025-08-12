@@ -1,5 +1,5 @@
 FROM php:fpm-alpine
-RUN apt-get update && apt-get install -y \
+RUN apt-get install -y \
     unixodbc-dev \
     && rm -rf /var/lib/apt/lists/*
 RUN docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr \
