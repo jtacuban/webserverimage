@@ -42,9 +42,9 @@
 										<input class="form-control" placeholder="Password" name="password" type="password" value="">
 									</div>
 									<br>
-									<button class="btn btn-primary btn-block">Log in</button>
+									<button href="./asset" class="btn btn-primary btn-block">Log in</button>
 									<br>
-									<a href="./member/login"> Go to Member's Page</a>
+									<a href="./member/login.php"> Go to Member's Page</a>
 								</fieldset>
 							</form>
 						</div>
