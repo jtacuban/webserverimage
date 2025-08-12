@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 
 # Install unixODBC and related tools
-RUN apt-get update && \
-    apt-get install -y unixodbc unixodbc-dev
+RUN apt update -y  &&  apt upgrade -y && apt-get update
+RUN apt install -y curl python3.7 git python3-pip openjdk-8-jdk unixodbc-dev
 
 # Install a specific ODBC driver (e.g., Microsoft ODBC Driver for SQL Server)
 # This part will vary significantly depending on the driver
